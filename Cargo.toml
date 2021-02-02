@@ -7,3 +7,9 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+rand = "0.8"
+
+wasmer = { version = "1.0.1", default-features = false }
+wasmer-compiler-cranelift = { version = "1.0.1" }
+wasmer-engine-jit = { version = "1.0.1", features = ["compiler"] }
+wasmer-wasi = { version = "1.0.1" }
